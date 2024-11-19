@@ -1,4 +1,4 @@
-# Juwens Juwens
+# Juwens/Juwens homebrew tap
 
 ## How do I install these formulae?
 
