@@ -2,14 +2,14 @@
 
 ## How do I install these formulae?
 
-`brew install juwens/juwens/<formula>`
+`brew install juwens/pputil/<formula>`
 
-Or `brew tap juwens/juwens` and then `brew install <formula>`.
+Or `brew tap juwens/pputil` and then `brew install <formula>`.
 
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
-tap "juwens/juwens"
+tap "juwens/pputil"
 brew "<formula>"
 ```
 
