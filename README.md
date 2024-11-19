@@ -1,4 +1,4 @@
-# Juwens/Juwens homebrew tap
+# homebrew tap for https://github.com/juwens/pputil
 
 ## How do I install these formulae?
 
