@@ -16,3 +16,7 @@ brew "<formula>"
 ## Documentation
 
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+
+## package cache is here:
+
+https://github.com/juwens/homebrew-pputil/packages
