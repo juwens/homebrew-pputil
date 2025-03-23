@@ -1,8 +1,8 @@
 class Pputil < Formula
   desc "Lists mobile provisioning profiles on macos"
   homepage "https://github.com/juwens/pputil"
-  url "https://github.com/juwens/pputil/releases/download/v1.1.13/pputil.arm64"
-  sha256 "ead46757983e0af489256f94f322fbcdd3f16d1fde9438819babb35a0711686f"
+  url "https://github.com/juwens/pputil/archive/refs/tags/v1.1.13.tar.gz"
+  sha256 "70c005782bb93971baf2126488d8d668db64daf7188d82a78198ca5c3d313b8e"
   license "MPL-2.0"
 
   depends_on "rust" => :build
