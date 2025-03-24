@@ -14,14 +14,21 @@ jobs:
       uses: actions/github-script@v7.0.1
       with:
         script: |
-          let req = await github.request('GET /repos/{owner}/{repo}/releases', {
+          let response = await github.request('GET /repos/{owner}/{repo}/releases', {
             owner: context.repo.owner,
             repo: 'pputil',
             headers: {
               'X-GitHub-Api-Version': '2022-11-28'
             }
           })
-          console.log(req)
+          console.log("last release")
+          let release = response.data[0]
+          console.log(release)
+
+          let source_tar_gz_url = release.tarbal_url
+          
+          # todo: get sha256 of source
+          
         # The GitHub token used to create an authenticated client
         #github-token: # optional, default is ${{ github.token }}
         # Whether to tell the GitHub client to log details of its requests. true or false. Default is to run in debug mode when the GitHub Actions step debug logging is turned on.
