@@ -27,7 +27,7 @@ jobs:
 
           let source_tar_gz_url = release.tarbal_url
           
-          # todo: get sha256 of source
+          // todo: get sha256 of source
           
         # The GitHub token used to create an authenticated client
         #github-token: # optional, default is ${{ github.token }}
