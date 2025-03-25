@@ -11,8 +11,8 @@ jobs:
     steps:
     - name: echoe tarball url
       run: echo "${{ github.server_url }}/${{ github.repository }}/archive/refs/tags/${{ github.ref_name }}.tar.gz"
-    - name: download tarball
-      run: curl -o pputil.source.tar.gz -sL "${{ github.server_url }}/${{ github.repository }}/archive/refs/tags/${{ github.ref_name }}.tar.gz" | shasum -a 256 | cut -d " " -f 1
+    - run: curl -o pputil.source.tar.gz -sL "${{ github.server_url }}/${{ github.repository }}/archive/refs/tags/${{ github.ref_name }}.tar.gz" | shasum -a 256 | cut -d " " -f 1
+    - run: ls -lh
     - name: sha256sum
       run: sha256sum pputil.source.tar.gz | cut -d " " -f 1
     - name: get latest pputil release
