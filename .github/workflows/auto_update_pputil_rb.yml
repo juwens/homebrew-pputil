@@ -5,13 +5,14 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 
+
 jobs:
   update:
     runs-on: ubuntu-22.04
     steps:
     - name: echoe tarball url
       run: echo "${{ github.server_url }}/${{ github.repository }}/archive/refs/tags/${{ github.ref_name }}.tar.gz"
-    - run: curl -o pputil.source.tar.gz --fail-with-body -sL "${{ github.server_url }}/${{ github.owner }}/pputil/archive/refs/tags/v1.1.13.tar.gz"
+    - run: curl -v -o pputil.source.tar.gz --fail-with-body -sL "${{ github.server_url }}/${{ github.owner }}/pputil/archive/refs/tags/v1.1.13.tar.gz"
     - run: curl -o pputil.source.tar.gz --fail-with-body -sL "${{ github.server_url }}/${{ github.repository }}/archive/refs/tags/${{ github.ref_name }}.tar.gz"
     - run: ls -lh
     - name: sha256sum
