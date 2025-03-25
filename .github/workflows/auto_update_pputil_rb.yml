@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - run: ls -lh
-    - name: GitHub Script
+    - name: get latest pputil release
       uses: actions/github-script@v7.0.1
       with:
         script: |
@@ -21,9 +21,8 @@ jobs:
               'X-GitHub-Api-Version': '2022-11-28'
             }
           })
-          console.log("found latest release:")
           let release = response.data
-          console.log(release.tag_name)
+          console.log("found release: {release.tag_name}")
           
           console.log('---------------------------------------')
           console.log(release)
