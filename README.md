@@ -4,13 +4,13 @@
 
 `brew install juwens/pputil/<formula>`
 
-Or `brew tap juwens/pputil` and then `brew install <formula>`.
+Or `brew tap juwens/pputil` and then `brew install pputil`.
 
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
-tap "juwens/pputil"
-brew "<formula>"
+brew tap "juwens/pputil"
+brew "pputil
 ```
 
 ## Documentation
