@@ -10,7 +10,7 @@ Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`
 
 ```ruby
 brew tap "juwens/pputil"
-brew "pputil
+brew pputil
 ```
 
 ## Documentation
